@@ -12,7 +12,7 @@
  
       .project-section {
           padding: 20px;
-          background-color: #c6b687;
+          background-color: #000000;
           margin-bottom: 20px;
           border-radius: 10px;
           box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -54,23 +54,111 @@
 
 
 
-          <div class="container mt-5">
+          <div class="container mt-5" style="color: rgb(195, 195, 187);">
             <div class="row">
                 <div class="col-md-4 d-flex flex-column align-items-center">
                 <div class="project-section text-center">
-                    <img src="assets\images\git-clone.png" alt="Flop App" class="img-fluid rounded" width="360" height="180">
-                    <h3 class=" text-center mt-3">Backend.</h3>
-                    <p>Clonar tu repositorio en git bash usando "git clone".</p>
+                    <img src="assets\images\venv1.png" alt="Flop App" class="img-fluid rounded" width="550" height="180">
+                    <h3 class=" text-center mt-3">Crea tu entorno virtual</h3>
+                    <p>Si usas windows, abre el cmd y dentro de una carpeta usa el comando "python -m venv venv". Si lo hiciste correctamente se abrirá una subcarpeta llamada venv, ese es tu entorno virtual.</p>
                   </div>
               </div>
 
               <div class="col-md-4 d-flex flex-column align-items-center">
                 <div class="project-section text-center">
-                    <img src="assets\images\git-clone.png" alt="Flop App" class="img-fluid rounded" width="360" height="180">
-                    <h3 class=" text-center mt-3">Backend.</h3>
-                    <p>Clonar tu repositorio en git bash usando "git clone".</p>
+                    <img src="assets\images\venv2.png" alt="Flop App" class="img-fluid rounded" width="360" height="180">
+                    <h3 class=" text-center mt-3">Actívalo</h3>
+                    <p>Para activarlo escribe después de lo anterior "venv\Scripts\activate" si lo hiciste correctamente abajo se pondrá una burbuja de (venv), ya está activado. Esto repítelo cada vez que lo quieras abrir.</p>
                   </div>
               </div>
+
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+
+                        <h3 class=" text-center mt-3">¿Para que sirve un entorno virtual?</h3>
+                        <p>Servirá como un espacio aislado en tu computadora en el cuál podras instalar bibliotecas, dependencias y lo que necesites para tu proyecto, pero solo dentro de esa burbuja, no afectará tu entorno exterior de trabajo,. En caso de que instales la versión más reciente de python pero tu proyecto está en una versión anterior, no tendrás ningún problema si tu proyecto está dentro de un entorno virtual.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\flask.png" alt="Flop App" class="img-fluid rounded" width="360" height="180">
+                        <h3 class=" text-center mt-3">Flask</h3>
+                        <p>Flask es una biblioteca que utilizarás para crear tu backend, para instalarla escribe "pip install Flask".</p>
+                      </div>
+                  </div>
+
+              
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\freezw.png" alt="Flop App" class="img-fluid rounded" width="360" height="180">
+                        <h3 class=" text-center mt-3">Checa las bibliotecas</h3>
+                        <p>Para ver las bibliotecas que instalaste, escribe "pip freeze". Esto te dará una vista de lo que tienes instalado.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\pyt.png" alt="Flop App" class="img-fluid rounded" width="660" height="180">
+                        <h3 class=" text-center mt-3">Función principal</h3>
+                        <p>Abre python desde tu carpeta y escribe el siguiente código:
+                          <ul class="text-lg-start"><li>from flask import Flask: esto permitirá utilizar recursos de la biblioteca Flask</li>
+                          <li>app = Flask(__name__): será útil para localizar recursos. </li>
+                        <li>@app.route('/'): asocia un URL con la función home.</li>
+                      <li>def home(): se define una función llamada home, se podrá acceder con el URL raíz de la aplicación.</li>
+                    <li>return "Mi primer backend": La función home abrirá el navegador y se expondrá el texto escrito.</li><li>if __name__=='__main__': el servidor web se ejecutará al ejecutar el archivo python.</li><li>app.run(debug=True): hará los cambios automáticos en el navegador.
+
+                    </li></ul>
+                        </p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\Captura de pantalla 2024-11-29 131128.png" alt="Flop App" class="img-fluid rounded" width="450" height="180">
+                        <h3 class=" text-center mt-3">Ejecuta el programa</h3>
+                        <p>Dentro de la consola excribe "python app.py". Esto ejecutará el programa y te dará el link http://127.0.0.1:5000/ Ábrelo en tu navegador y encontrarás lo que escribiste en return. Esto activa tu servidor. para cerrarlo presiona CTRL+C.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\re.png" alt="Flop App" class="img-fluid rounded" width="370" height="180">
+                        <h3 class=" text-center mt-3"></h3>
+                        <p>Así se ve en el navegador, recuerda que cualquier cambio que hagas en tu proyecto y guardes, se verá reflejado automáticamente en tu servidor.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\2.png" alt="Flop App" class="img-fluid rounded" width="500" height="180">
+                        <h3 class=" text-center mt-3">Coloca archivos html</h3>
+                        <p>Para poder colocar archivos html haz lo siguiente:
+                          <ol class="text-lg-start"><li>Crea una carpeta templates donde pongas todos tus archivos html.</li><li>Después de la linea import Flask pon: ", return_template".</li><li>En el return de la función home pondrás render_template('') Dentro de las comillas del paréntesis pon el nombre de tu archivo.</li><li>Ya con esto estas llamando la ruta de tu archivo, para agregar más links a tu server, copia la función app route, y solo cambia la ruta.</li></ol></p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\yl.png" alt="Flop App" class="img-fluid rounded" width="500" height="180">
+                        <h3 class=" text-center mt-3">Agregar imagenes</h3>
+                        <p>Para poder colocar imagenes haz lo siguiente:
+                          <ol class="text-lg-start"><li>Crea una carpeta static, adentro una carpeta images. Aquí irán todas tus imgaenes.</li><li>Dentro del archivo html pondrás como ruta lo que se muestra en la captura de pantalla. Solo cambiarás el nombre de la imagen.</li><li>Listo, haz esto con todas las imágenes que necesites.</li></ol></p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\arc.png" alt="Flop App" class="img-fluid rounded" width="500" height="180">
+                        <h3 class=" text-center mt-3">Agrega un link a otra página</h3>
+                        <p>Siempre que quieras agregar un link de una página a otra haz lo siguiente:
+                          <ol class="text-lg-start"><li>Asegúrate de que el archivo html se encuentre dentro de la carpeta templates.</li><li>Asegúrate de que también le hayas hecho una ruta desde python.</li><li>Para que funcione, dentro de tu archivo html pondrás la ruta que se muestra en la captura de pantalla, solo cambiarás el nombre de tu archivo.</li></ol></p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="project-section text-center">
+                        <img src="assets\images\final.png" alt="Flop App" class="img-fluid rounded" width="500" height="180">
+                        <h3 class=" text-center mt-3"></h3><p>Estas herramientas son más que suficientes para que puedes tener una página web con un servidor virtual, a partir de aquí puedes crear lo que quieras, no olvides hacer git push.</p>
+                      </div>
+
+
         
          
 
